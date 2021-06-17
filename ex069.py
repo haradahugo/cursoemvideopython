@@ -13,7 +13,7 @@ while True:
         cont_mulheres += 1
     cont = str(input('Pessoa cadastrada com sucesso, deseja continuar? [S / N]? \n')).upper()
     while cont not in 'SN':
-        cont = str(input('Por favor, digite uma entrada válida: ')).split().upper()
+        cont = str(input('Por favor, digite uma entrada válida: ')).strip().upper()
     if cont == 'N':
         break
 print(f'{cont_idade} pessoas possuem mais de 18 anos.\n{cont_homens} homens foram cadastrados.\n{cont_mulheres} mulheres com menos de 20 anos foram cadastradas.')
