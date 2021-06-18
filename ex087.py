@@ -3,9 +3,10 @@ print('Matriz 3 x 3 em Python')
 matriz = list()
 soma = maior = 0
 for m in range(1,10):
-    matriz.append(int(input(f'Digite um valor para a posição {m}: ')))
-    if m % 2 == 0:
-        soma += m
+    num = (int(input(f'Digite um valor para a posição {m}: ')))
+    matriz.append(num)
+    if num % 2 == 0:
+        soma += num
     if 4 <= m <= 6:
         if m == 4:
             maior = matriz[3]
